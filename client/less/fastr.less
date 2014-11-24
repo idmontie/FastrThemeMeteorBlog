@@ -1,5 +1,26 @@
 
 article.post {
+  border-bottom: #EBF2F6 1px solid !important;
+  padding-bottom: 2rem;
+  position: relative;
+
+  &:after {
+    display: block;
+    content: "";
+    width: 7px;
+    height: 7px;
+    border: #E7EEF2 1px solid;
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    margin-left: -5px;
+    background: #fff;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    border-radius: 100%;
+    box-shadow: #fff 0 0 0 5px;
+  }
+
   h1, h2, h3, h4, h5, h6 {
     clear: both;
     line-height: 1.4;
@@ -26,22 +47,7 @@ article.post {
     font-size: 20px;
     margin: 1.5em 0 0;
 
-    &:after {
-      display: block;
-      content: "";
-      width: 7px;
-      height: 7px;
-      border: #E7EEF2 1px solid;
-      position: absolute;
-      bottom: -5px;
-      left: 50%;
-      margin-left: -5px;
-      background: #fff;
-      -webkit-border-radius: 100%;
-      -moz-border-radius: 100%;
-      border-radius: 100%;
-      box-shadow: #fff 0 0 0 5px;
-    }
   }
 
+  
 }
